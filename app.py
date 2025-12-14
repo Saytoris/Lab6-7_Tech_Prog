@@ -1,5 +1,5 @@
 # app.py
-#WOW
+#WO
 class SimpleCalculator:
     """
     Простий клас калькулятора для демонстрації CI/CD.
