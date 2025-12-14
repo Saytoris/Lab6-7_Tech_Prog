@@ -1,7 +1,7 @@
 # CI/CD pipeline for Flask Pawnshop Application
 # This workflow installs dependencies, runs linting, and executes unit tests
 
-name: Flask Pawnshop App CI
+name: Flask App CI
 
 on:
   push:
