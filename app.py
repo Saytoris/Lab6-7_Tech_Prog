@@ -5,6 +5,7 @@ docker run --rm -p 5000:5000 product-flask-app
 http://localhost:5000 (зайти сюди в браузері )
 
  """
+#wow
 import os
 from flask import Flask, request, redirect, url_for, render_template_string
 from product_stack import Product, ProductStack
