@@ -93,7 +93,7 @@ resource "aws_instance" "webapp_instance" {
               # Create a simple systemd service
               cat > /etc/systemd/system/webapp.service <<EOL
               [Unit]
-              Description=Flask Pawnshop Application
+              Description=Flask App CI
               After=network.target
 
               [Service]
