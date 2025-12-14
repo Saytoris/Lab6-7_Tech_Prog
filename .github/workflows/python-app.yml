@@ -191,11 +191,11 @@ jobs:
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
         chmod 600 ~/.ssh/deploy_key
         ssh-keyscan -H ${{ steps.get-ip.outputs.instance_ip }} >> ~/.ssh/known_hosts
-
+       
     - name: Deploy Application Code
       run: |
         # Create deployment package
-        tar -czf app.tar.gz app.py
+        tar -czf app.tar.gz app.py product_stack.py tar -czf app.tar.gz app.py
 
         # Copy to server
         scp -i ~/.ssh/deploy_key app.tar.gz ec2-user@${{ steps.get-ip.outputs.instance_ip }}:/tmp/
